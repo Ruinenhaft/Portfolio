@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(53, 53, 53);
+}
+
+.frame{/*가장 큰 div*/
+    margin: 30px 150px;/*30px 위아래, 150px 좌우*/
+    display: flex;/*표기 타입*/
+    flex-direction: column;/*내용물을 세로로 쌓겠다.*/
+}
+
+/*네비게이터*/
+.navigator{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;/*콘텐트에 적용되는 방향*/
+}
+
+li{
+    display:inline;
+    align-self: center;
+    margin:0;
+    margin-left: 15px;
+}/*같은줄에 오게하는것 인라인*/
+
+ul{
+    margin:0;
+}
+
+.site-name{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+}
+
+.nav-menu{/*li와 섹터를 나눠서 폰트에만 적용*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}/*링크 색상 지우기*/
+
+a:hover{
+    color:wheat;
+    transition: 0.3s;
+}/*마우스 호버시 나타나는 색상/지속시간*/
+
+.highlight{
+    color:rgba(245, 222, 179, 0.555);
+}
