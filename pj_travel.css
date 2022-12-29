@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(104, 104, 104);
 }
 
 .frame{/*가장 큰 div*/
@@ -14,7 +14,13 @@ body{
     flex-direction: row;
     justify-content: space-between;/*콘텐트에 적용되는 방향*/
 }
-
+.nav-menu-li{
+    display:inline;
+    align-self: center;
+    margin:0;
+    margin-left: 15px;
+}
+/*
 li{
     display:inline;
     align-self: center;
@@ -24,7 +30,7 @@ li{
 
 ul{
     margin:0;
-}
+}*/
 
 .site-name{
     margin:0;
@@ -42,7 +48,7 @@ ul{
 .dashboard{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 100px;/*navigator에 너무 붙어있어서 margin top*/
 }
 
 a{
@@ -51,10 +57,242 @@ a{
 }/*링크 색상 지우기*/
 
 a:hover{
-    color:wheat;
+    color:rgb(245, 216, 164);
     transition: 0.3s;
+    -webkit-text-stroke: 1px rgb(255, 240, 211);
 }/*마우스 호버시 나타나는 색상/지속시간*/
 
 .highlight{
-    color:rgba(245, 222, 179, 0.555);
+    color:rgba(245, 222, 179, 0.822);
+}
+
+.title-comment{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.comment{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+.recent{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    text-align: right;
+    margin-top: 50px;
+}
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;/*가로방향으로 센터 조절*/
+    margin-bottom: 200px;
+}
+.pj-info{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contact{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color:rgb(34, 34, 34);
+    margin-bottom: 20px;
+   
+    border-bottom: 2px solid black;
+    
+}
+.contact-links{
+    margin-bottom: 40px;
+}
+.contact-links>a{/*부모 > 자식, 부모요소 안에있는 자식한테만 설정.*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.recent-work{
+    display:flex;
+    flex-direction: column;
+}
+
+.project{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.thumbnail{
+    width: 300px;
+    height: 200px;
+}
+
+/*info section*/
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin : 50px 50px;
+}
+
+#profile-picture{
+    width: 500px;
+    height: 500px;
+    margin-right: 60px;
+}
+
+.introduction > h2{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.introduction > p{
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.introduction > ul > li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 30px;
+}
+.value-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+.value-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;/*왼쪾부터 정렬*/
+    align-content: center;
+    margin: 100px 150px;
+    margin-top: 20px;
+}
+
+.value{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.value-icon{
+    width: 100px;
+    height: 100px;
+    padding:15px;
+    border: 2px solid wheat;
+    border-radius: 100px;
+}
+
+.value-intro{
+    margin-left: 100px;
+}
+
+.value-name{
+    font-family: 'Noto Sans KR',sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.value-exp{
+    font-weight: 300;
+    font-size: 16px;
+    margin:0;
+}
+
+/*Product section*/
+.input_search{
+    width: 50%;
+    font-size: 30px;
+    background-color:rgb(145, 145, 145) 
+}
+.project{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content:center;/*컨텐츠 중앙*/
+}
+.search_index{
+    font-size: 30px;
+    margin:0;
+}
+
+.comment-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;/*왼쪾부터 정렬*/
+    align-content: center;
+    margin: 100px 150px;
+    margin-top: 20px;
+}
+
+.dashboard_dark{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;/*navigator에 너무 붙어있어서 margin top*/
+    display: none;
+
+    justify-content:center;/*컨텐츠 중앙*/
+}
+.dashboard_bright{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;/*navigator에 너무 붙어있어서 margin top*/
+    display: none;
+}
+.dashboard_red{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;/*navigator에 너무 붙어있어서 margin top*/
+    display: none;
+}
+
+.theme_char{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.theme_char > h3{
+    font-size: 10px;
+}
+
+.pj-name{
+    font-size: 60px;
+}
+
+#dark:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    -webkit-text-stroke: 1px rgb(107, 107, 107);
+}
+#bright:hover{
+    color: rgb(236, 243, 131);
+    transition: 0.3s;
+    -webkit-text-stroke: 1px rgb(255, 240, 211);
+}
+#red:hover{
+    color: rgb(172, 0, 0);
+    transition: 0.3s;
+    -webkit-text-stroke: 1px rgba(255, 0, 0, 0.486);
+}
+
+.wallpaper{
+    width: 60%;
+    height: 400px;
+
+    justify-content:center;/*컨텐츠 중앙*/
 }

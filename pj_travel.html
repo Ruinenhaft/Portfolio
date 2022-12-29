@@ -13,8 +13,9 @@
             <nav class="navigator">
                 <h3 class="site-name">Project Page</h3>
                 <ul>
-                    <li><a class="nav-menu" href="pj_travel.html">Work</a></li>
-                    <li><a class="nav-menu" href="pj_info.html">Info</a></li>
+                    <li class="nav-menu-li"><a class="nav-menu" href="pj_travel.html">Work</a></li>
+                    <li class="nav-menu-li"><a class="nav-menu" href="pj_info.html">Info</a></li>
+                    <li class="nav-menu-li"><a class="nav-menu" href="pj_subproject.html">subproject</a></li>
                 </ul>
             </nav><!--네비게이터-->
 
@@ -22,18 +23,55 @@
 
 
             <div class="dashboard">
-                <h1>안녕하세요, <a class="highlight">길찾는 개발자 손동환</a>입니다.<br>
+                <h1 class="title-comment">안녕하세요, <a class="highlight">길찾는 개발자 손동환</a>입니다.<br>
                 <a class="highlight">꾸준함</a>의 중요성을 상기하고자<br> <a class="highlight">커밋, 블로깅</a>으로 하루를 정리합니다.</h1>
-                <p class="comment">3년차 개발자로 자동화 라인 비전시스템 회사에 다니며<br> 전반적인 프로그램 개발에 참여하고<br>
-                    담당섹터 프로그램 관리업무를 수행하였습니다.
+                <p class="comment">3년차 개발자로 스마트팩토리 비전시스템 회사에 다녔으며<br> 다양한 경험을 위해<br>
+                    플래이데이터 빅데이터 과정에 참가하였습니다.
                 </p>
             </div>
 
-            <h5>RECENT WORKS</h5>
 
-            <div class="recent-work"></div>
 
-            <footer calss="work-footer"></footer>
+            <h5 class="recent">RECENT WORKS</h5>
+
+            <div class="recent-work">
+                <div class="project" id="pj1">
+                    <img class="thumbnail" id="thumb1" src="/pictures/3week/pj_space_titanic.PNG">
+                    <div class="pj-info">
+                        <h3 class="pj-name">우주선 생존자 예측 DL[kaggle]</h3>
+                        <p class="pj-comment">다양한 특징요소를 전처리하여 생존자 예측 모델 구현</p>
+                        <a href="https://github.com/Ruinenhaft/Project_space_titanic">GIT</a>
+                    </div>
+                </div>
+                <div class="project" id="pj2">
+                    <div class="pj-info">
+                        <h3 class="pj-name">간단한 PC부품 샵</h3>
+                        <p class="pj-comment">Java-MySQL 연동으로 관리자계정의 유저/제품관리</p>
+                        <a href="https://github.com/Ruinenhaft/mini_shop">GIT</a><BR>
+                        <a href="https://ajar-adasaurus-b69.notion.site/GUI-DB-24ae3d96af6a401f92923d916fa65001">Notion</a>
+                    </div>
+                    <img class="thumbnail" id="thumb2" src="/pictures/3week/shop_ERD_2.PNG.png">
+                </div>
+                <div class="project" id="pj3">
+                    <img class="thumbnail" id="thumb3" src="/pictures/3week/UI.jpg">
+                    <img class="thumbnail" id="thumb3" src="/pictures/3week/server.PNG">
+                    <div class="pj-info">
+                        <h3 class="pj-name">비전 프로그램</h3>
+                        <p class="pj-comment">C#-MSSQL 연동으로 각 클라이언트에서 촬영된 이미지와 DB를 받아서 서버 프로그램에서 일괄 확인 가능하게 구현</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer class="footer">
+                <h3 class="contact">CONTACT ME</h3>
+                <div class="contact-links">
+                    <a class="blog" href="https://eulennests.tistory.com/">BLOG</a>
+                    <a class="git" href="https://github.com/Ruinenhaft">GIT</a>
+                    <a class="gmail" href="eulennests@gmail.com">MAIL</a>
+                </div>
+                
+            </footer>
 
         </div>
 </body>
