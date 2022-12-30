@@ -143,7 +143,7 @@ a:hover{
 
 #profile-picture{
     width: 500px;
-    height: 500px;
+    height: 350px;
     margin-right: 60px;
 }
 
@@ -242,6 +242,7 @@ a:hover{
 }
 
 .dashboard_dark{
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     margin-top: 100px;/*navigator에 너무 붙어있어서 margin top*/
@@ -250,12 +251,21 @@ a:hover{
     justify-content:center;/*컨텐츠 중앙*/
 }
 .dashboard_bright{
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     margin-top: 100px;/*navigator에 너무 붙어있어서 margin top*/
     display: none;
 }
 .dashboard_red{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;/*navigator에 너무 붙어있어서 margin top*/
+    display: none;
+}
+.dashboard_blue{
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     margin-top: 100px;/*navigator에 너무 붙어있어서 margin top*/
@@ -267,17 +277,19 @@ a:hover{
     margin-right: 20px;
 }
 .theme_char > h3{
-    font-size: 10px;
+    font-size: 30px;
 }
 
 .pj-name{
-    font-size: 60px;
+    margin-top:5px;
+    font-size: 40px;
 }
 
 #dark:hover{
     color: rgb(0, 0, 0);
     transition: 0.3s;
     -webkit-text-stroke: 1px rgb(107, 107, 107);
+    
 }
 #bright:hover{
     color: rgb(236, 243, 131);
@@ -289,10 +301,62 @@ a:hover{
     transition: 0.3s;
     -webkit-text-stroke: 1px rgba(255, 0, 0, 0.486);
 }
+#blue:hover{
+    color: rgb(2, 14, 180);
+    transition: 0.3s;
+    -webkit-text-stroke: 1px rgba(17, 20, 192, 0.486);
+}
 
 .wallpaper{
-    width: 60%;
-    height: 400px;
+    width: 80%;
+    height: 500px;
 
     justify-content:center;/*컨텐츠 중앙*/
+}
+
+.dashboard_main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;/*navigator에 너무 붙어있어서 margin top*/
+    display: block;
+    width: 80%;
+    height: 500px;
+    justify-content:center;/*컨텐츠 중앙*/
+    border:1px solid black;
+    margin-left: 10%;
+}
+
+.dashboard_main > P{
+    text-align: center;
+}
+
+.pj_frame{/*가장 큰 div*/
+    margin: 30px 30px;/*30px 위아래, 150px 좌우*/
+    display: flex;/*표기 타입*/
+    flex-direction: column;/*내용물을 세로로 쌓겠다.*/
+    justify-content:center;
+}
+
+.theme_list{
+    display:flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 50px;
+}
+
+#theme_list_border{
+    border-left: 3px dotted black;
+}
+
+figure{
+    display: inline-block;
+    margin:0;
+}
+figure img{
+    vertical-align: top;
+}
+
+figure figcaption{
+    text-align: center;
 }
